@@ -159,7 +159,7 @@ function umountToast() {
 }
 
 // show animated toast
-function show(text, type, config) {
+function show(text, type = 'info', config = {}) {
     let newConfig = assign({}, options, config)
     if (!document.getElementById(wrapper).hasChildNodes()) {
         // mount toast

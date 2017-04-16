@@ -5,7 +5,7 @@ export const duration = 500
 // default options
 export let options = {
     timeout: 3000,
-    position: 'top',
+    position: 'default',
     backgroundColor: null,
     textColor: null
 }
