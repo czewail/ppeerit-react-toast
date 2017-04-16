@@ -1,11 +1,11 @@
 {
   "name": "ppeerit-react-toast",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "toast for reactjs",
-  "main": "bin/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "lint": "eslint src/",
-    "compile": "babel -d bin/ src/",
+    "compile": "babel -d dist/ src/",
     "prepublish": "npm run compile",
     "read:version": "echo $npm_package_version"
   },
