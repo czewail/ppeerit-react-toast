@@ -1,5 +1,5 @@
 import {
-    options,
+    duration,
     colors
 } from './config'
 
@@ -10,29 +10,44 @@ export const containerStyle = {
     margin: '0 auto',
     right: '0px',
     left: '0px',
-    top: '-100px',
     textAlign: 'center',
     zIndex: '9999',
     pointerEvents: 'none',
-    transition: 'all ' + options.animationDuration + 'ms ease',
+    transition: 'all ' + duration + 'ms ease',
     transform: 'translateY(0px)',
     lineHeight: '1.8',
+    overflow: 'hidden',
     // fix
-    msTransition: 'all ' + options.animationDuration + 'ms ease',
+    msTransition: 'all ' + duration + 'ms ease',
     msTransform: 'translateY(0px)',
-    WebkitTransition: 'all ' + options.animationDuration + 'ms ease',
+    WebkitTransition: 'all ' + duration + 'ms ease',
     WebkitTransform: 'translateY(0px)',
-    OTransition: 'all ' + options.animationDuration + 'ms ease',
+    OTransition: 'all ' + duration + 'ms ease',
     OTransform: 'translateY(0px)',
-    MozTransition: 'all ' + options.animationDuration + 'ms ease',
+    MozTransition: 'all ' + duration + 'ms ease',
     MozTransform: 'translateY(0px)'
+
+}
+// container top position
+export const containerTopStyle = {
+    top: '-100px',
+    borderRadius: '0 0 4px 4px',
+}
+// container bottom position
+export const containerBottomStyle = {
+    bottom: '-100px',
+    borderRadius: '4px 4px 0 0',
+}
+// container default position
+export const containerDefaultStyle = {
+    bottom: '20%',
+    borderRadius: '4px',
 }
 // base content style
 export const contentBaseStyle = {
     cursor: 'pointer',
     display: 'block',
     width: 'auto',
-    borderRadius: '0 0 4px 4px',
     backgroundColor: 'white',
     padding: '10px 30px',
     pointerEvents: 'all'
@@ -52,23 +67,68 @@ export const contentWarningStyle = {
     backgroundColor: colors.warning,
     color: colors.gray
 }
+// info content style
+export const contentInfoStyle = {
+    backgroundColor: colors.black,
+    color: colors.white,
+    opacity: 0.6
+}
+
 // default content style
 export const contentDefaultStyle = {}
 
-// show transform
-export const transformShowStyle = {
+/*============down animate=====================*/
+export const animateDownStyleToShow = {
+    transform: 'translateY(100px)',
+    msTransform: 'translateY(100px)',
+    WebkitTransform: 'translateY(100px)',
+    OTransform: 'translateY(100px)',
+    MozTransform: 'translateY(100px)',
+    opacity: 1,
+    msOpacity: 1,
+    WebkitOpacity: 1,
+    MozOpacity: 1,
+    OOpacity: 1
+}
+export const animateDownStyleToHide = {
+    transform: 'translateY(-100px)',
+    msTransform: 'translateY(-100px)',
+    WebkitTransform: 'translateY(-100px)',
+    OTransform: 'translateY(-100px)',
+    MozTransform: 'translateY(-100px)',
+    opacity: 0.1,
+    msOpacity: 0.1,
+    WebkitOpacity: 0.1,
+    MozOpacity: 0.1,
+    OOpacity: 0.1
+}
+/*============up animate=====================*/
+export const animateUpStyleToShow = {
+    transform: 'translateY(-100px)',
+    msTransform: 'translateY(-100px)',
+    WebkitTransform: 'translateY(-100px)',
+    OTransform: 'translateY(-100px)',
+    MozTransform: 'translateY(-100px)'
+}
+export const animateUpStyleToHide = {
     transform: 'translateY(100px)',
     msTransform: 'translateY(100px)',
     WebkitTransform: 'translateY(100px)',
     OTransform: 'translateY(100px)',
     MozTransform: 'translateY(100px)'
 }
-
-// hide transform
-export const transformHideStyle = {
-    transform: 'translateY(-100px)',
-    msTransform: 'translateY(-100px)',
-    WebkitTransform: 'translateY(-100px)',
-    OTransform: 'translateY(-100px)',
-    MozTransform: 'translateY(-100px)'
+/*============fade animate=====================*/
+export const animateFadeStyleToShow = {
+    opacity: 1,
+    MozOpacity: 1,
+    WebkitOpacity: 1,
+    OOpacity: 1,
+    msOpacity: 1
+}
+export const animateFadeStyleToHide = {
+    opacity: 0.01,
+    MozOpacity: 0.01,
+    WebkitOpacity: 0.01,
+    OOpacity: 0.01,
+    msOpacity: 0.01
 }

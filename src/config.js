@@ -1,8 +1,13 @@
+// export render dom id
+export const wrapper = 'toast-wrapper'
+// export duration time
+export const duration = 500
 // default options
-export const options = {
-    wrapperId: 'toast-wrapper',
-    defaultTimeout: 3000,
-    animationDuration: 300
+export let options = {
+    timeout: 3000,
+    position: 'top',
+    backgroundColor: null,
+    textColor: null
 }
 // default colors
 export const colors = {
@@ -10,5 +15,6 @@ export const colors = {
     error: '#E85742',
     success: '#55CA92',
     warning: '#F5E273',
-    gray: '#333333'
+    gray: '#333333',
+    black: 'black'
 }
