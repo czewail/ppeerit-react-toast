@@ -1,6 +1,6 @@
 {
   "name": "ppeerit-react-toast",
-  "version": "0.0.10",
+  "version": "1.0.1",
   "description": "toast for reactjs",
   "main": "bin/index.js",
   "scripts": {
