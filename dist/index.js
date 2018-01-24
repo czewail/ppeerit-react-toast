@@ -172,10 +172,9 @@ Toast.PropTypes = {
     text: _propTypes2.default.string,
     type: _propTypes2.default.string,
     style: _propTypes2.default.oneOfType([_propTypes2.default.object, _propTypes2.default.bool])
+
+    // will mount react dom
 };
-
-// will mount react dom
-
 var _class = function (_React$Component2) {
     _inherits(_class, _React$Component2);
 

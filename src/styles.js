@@ -43,6 +43,11 @@ export const containerDefaultStyle = {
     bottom: '20%',
     borderRadius: '4px',
 }
+// container default position
+export const containerMiddleTopStyle = {
+    top: '20%',
+    borderRadius: '4px',
+}
 // base content style
 export const contentBaseStyle = {
     cursor: 'pointer',

@@ -30,56 +30,46 @@ var containerStyle = exports.containerStyle = {
     OTransform: 'translateY(0px)',
     MozTransition: 'all ' + _config.duration + 'ms ease',
     MozTransform: 'translateY(0px)'
-
-};
-// container top position
-var containerTopStyle = exports.containerTopStyle = {
+    // container top position
+};var containerTopStyle = exports.containerTopStyle = {
     top: '-100px',
     borderRadius: '0 0 4px 4px'
-};
-// container bottom position
-var containerBottomStyle = exports.containerBottomStyle = {
+    // container bottom position
+};var containerBottomStyle = exports.containerBottomStyle = {
     bottom: '-100px',
     borderRadius: '4px 4px 0 0'
-};
-// container default position
-var containerDefaultStyle = exports.containerDefaultStyle = {
+    // container default position
+};var containerDefaultStyle = exports.containerDefaultStyle = {
     bottom: '20%',
     borderRadius: '4px'
-};
-// base content style
-var contentBaseStyle = exports.contentBaseStyle = {
+    // base content style
+};var contentBaseStyle = exports.contentBaseStyle = {
     cursor: 'pointer',
     display: 'block',
     width: 'auto',
     backgroundColor: 'white',
     padding: '10px 30px',
     pointerEvents: 'all'
-};
-// success content style
-var contentSuccessStyle = exports.contentSuccessStyle = {
+    // success content style
+};var contentSuccessStyle = exports.contentSuccessStyle = {
     backgroundColor: _config.colors.success,
     color: _config.colors.white
-};
-// error content style
-var contentErrorStyle = exports.contentErrorStyle = {
+    // error content style
+};var contentErrorStyle = exports.contentErrorStyle = {
     backgroundColor: _config.colors.error,
     color: _config.colors.white
-};
-// warning content style
-var contentWarningStyle = exports.contentWarningStyle = {
+    // warning content style
+};var contentWarningStyle = exports.contentWarningStyle = {
     backgroundColor: _config.colors.warning,
     color: _config.colors.gray
-};
-// info content style
-var contentInfoStyle = exports.contentInfoStyle = {
+    // info content style
+};var contentInfoStyle = exports.contentInfoStyle = {
     backgroundColor: _config.colors.black,
     color: _config.colors.white,
     opacity: 0.6
-};
 
-// default content style
-var contentDefaultStyle = exports.contentDefaultStyle = {};
+    // default content style
+};var contentDefaultStyle = exports.contentDefaultStyle = {};
 
 /*============down animate=====================*/
 var animateDownStyleToShow = exports.animateDownStyleToShow = {
@@ -105,9 +95,8 @@ var animateDownStyleToHide = exports.animateDownStyleToHide = {
     WebkitOpacity: 0.1,
     MozOpacity: 0.1,
     OOpacity: 0.1
-};
-/*============up animate=====================*/
-var animateUpStyleToShow = exports.animateUpStyleToShow = {
+    /*============up animate=====================*/
+};var animateUpStyleToShow = exports.animateUpStyleToShow = {
     transform: 'translateY(-100px)',
     msTransform: 'translateY(-100px)',
     WebkitTransform: 'translateY(-100px)',
@@ -120,9 +109,8 @@ var animateUpStyleToHide = exports.animateUpStyleToHide = {
     WebkitTransform: 'translateY(100px)',
     OTransform: 'translateY(100px)',
     MozTransform: 'translateY(100px)'
-};
-/*============fade animate=====================*/
-var animateFadeStyleToShow = exports.animateFadeStyleToShow = {
+    /*============fade animate=====================*/
+};var animateFadeStyleToShow = exports.animateFadeStyleToShow = {
     opacity: 1,
     MozOpacity: 1,
     WebkitOpacity: 1,

@@ -13,9 +13,8 @@ var options = exports.options = {
     position: 'default',
     backgroundColor: null,
     textColor: null
-};
-// default colors
-var colors = exports.colors = {
+    // default colors
+};var colors = exports.colors = {
     white: 'white',
     error: '#E85742',
     success: '#55CA92',

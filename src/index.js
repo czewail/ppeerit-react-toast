@@ -3,12 +3,12 @@ import PropTypes from 'prop-types'
 import ReactDOM from 'react-dom'
 import assign from 'object-assign'
 
-
 import {
     containerStyle,
     containerTopStyle,
     containerBottomStyle,
     containerDefaultStyle,
+    containerMiddleTopStyle,
     contentBaseStyle,
     contentSuccessStyle,
     contentErrorStyle,
@@ -50,6 +50,11 @@ class Toast extends React.Component {
                 style.container = assign({}, containerStyle, containerBottomStyle)
                 style.animate.show = assign({}, animateUpStyleToShow)
                 style.animate.hide = assign({}, animateUpStyleToHide)
+                break
+            case 'middle-top':
+                style.container = assign({}, containerStyle, containerMiddleTopStyle)
+                style.animate.show = assign({}, animateFadeStyleToShow)
+                style.animate.hide = assign({}, animateFadeStyleToHide)
                 break
             case 'default':
                 style.container = assign({}, containerStyle, containerDefaultStyle)

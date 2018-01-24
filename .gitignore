@@ -3,6 +3,7 @@
 # NPM
 npm-debug.log
 node_modules
+package-lock.json
 
 # OSX
 *.DS_Store
