@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.animateFadeStyleToHide = exports.animateFadeStyleToShow = exports.animateUpStyleToHide = exports.animateUpStyleToShow = exports.animateDownStyleToHide = exports.animateDownStyleToShow = exports.contentDefaultStyle = exports.contentInfoStyle = exports.contentWarningStyle = exports.contentErrorStyle = exports.contentSuccessStyle = exports.contentBaseStyle = exports.containerDefaultStyle = exports.containerBottomStyle = exports.containerTopStyle = exports.containerStyle = undefined;
+exports.animateFadeStyleToHide = exports.animateFadeStyleToShow = exports.animateUpStyleToHide = exports.animateUpStyleToShow = exports.animateDownStyleToHide = exports.animateDownStyleToShow = exports.contentDefaultStyle = exports.contentInfoStyle = exports.contentWarningStyle = exports.contentErrorStyle = exports.contentSuccessStyle = exports.contentBaseStyle = exports.containerMiddleTopStyle = exports.containerDefaultStyle = exports.containerBottomStyle = exports.containerTopStyle = exports.containerStyle = undefined;
 
 var _config = require('./config');
 
@@ -41,6 +41,10 @@ var containerStyle = exports.containerStyle = {
     // container default position
 };var containerDefaultStyle = exports.containerDefaultStyle = {
     bottom: '20%',
+    borderRadius: '4px'
+    // container default position
+};var containerMiddleTopStyle = exports.containerMiddleTopStyle = {
+    top: '20%',
     borderRadius: '4px'
     // base content style
 };var contentBaseStyle = exports.contentBaseStyle = {

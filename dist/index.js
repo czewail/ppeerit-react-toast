@@ -71,6 +71,11 @@ var Toast = function (_React$Component) {
                     style.animate.show = (0, _objectAssign2.default)({}, _styles.animateUpStyleToShow);
                     style.animate.hide = (0, _objectAssign2.default)({}, _styles.animateUpStyleToHide);
                     break;
+                case 'middle-top':
+                    style.container = (0, _objectAssign2.default)({}, _styles.containerStyle, _styles.containerMiddleTopStyle);
+                    style.animate.show = (0, _objectAssign2.default)({}, _styles.animateFadeStyleToShow);
+                    style.animate.hide = (0, _objectAssign2.default)({}, _styles.animateFadeStyleToHide);
+                    break;
                 case 'default':
                     style.container = (0, _objectAssign2.default)({}, _styles.containerStyle, _styles.containerDefaultStyle);
                     style.animate.show = (0, _objectAssign2.default)({}, _styles.animateFadeStyleToShow);
